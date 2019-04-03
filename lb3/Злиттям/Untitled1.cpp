@@ -14,7 +14,7 @@ void mergeSort(vector<int> &a, int l, int r) {
 	mergeSort(a, m+1, r);
 	int aPointer = l;
 	int bPointer = m + 1;
-
+	res.clear();
 	for (int i = 0; i < r - l + 1; i++) {
 		if ((aPointer <= m) && ((bPointer > r) || (a[aPointer] < a[bPointer]))) {
 			res.push_back(a[aPointer]);
